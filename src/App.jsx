@@ -44,6 +44,7 @@ const App = () =>{
      <div id='mainBtn'>
      <button onClick={()=> setnum(num + 10)}>Increment</button>
      <button onClick={()=> setnum(num - 10)}>Decrement</button>
+     <button onClick={()=> setnum(num - 10)}>Decrement</button>
      </div>
 
  

@@ -67,6 +67,10 @@ button:focus-visible {
   }
 } */
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* 
 :root{
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -82,4 +86,25 @@ button{
 #mainBtn{
  display: flex;
  gap: 10px;
+} */
+
+*{
+  color: black;
+}
+
+.flag{
+  border: 2px solid black;
+  text-align: center;
+  justify-content: space-around;
+  padding: 10px;
+}
+.orange{
+  background-color: orange;
+  padding: 10px;
+}
+.white{
+  background-color: rgb(249, 249, 249);
+}
+.green{
+  background-color: rgb(0, 149, 30);
 }

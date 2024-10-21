@@ -39,13 +39,21 @@ const App = () =>{
 
   return(
     <>
-     <h1>Your number is : {num} </h1>
+     <h1 className='text-xl'>Your number is : {num} </h1>
 
      <div id='mainBtn'>
      <button onClick={()=> setnum(num + 10)}>Increment</button>
      <button onClick={()=> setnum(num - 10)}>Decrement</button>
      <button onClick={()=> setnum(num - 10)}>Decrement</button>
+
+      <div className='flag'>
+      <div className='orange'>orange</div>
+      <div className='white'>white</div>
+      <div className='green'>green</div>
      </div>
+     </div>
+
+    
 
  
     </>

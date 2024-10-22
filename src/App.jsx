@@ -3,6 +3,9 @@
 // import viteLogo from '/vite.svg'
 import { useState } from 'react';
 import './App.css'
+import Navbar from './components/Navbar';
+ 
+
 // import './index.css'
 
 // function App() {
@@ -52,12 +55,12 @@ const App = () => {
           <div className='green'>green</div>
         </div>
       </div>
-
       <div>krishna</div> */}
-
-
       {/* components */}
-      
+
+       <Navbar/>
+    
+        
 
 
 

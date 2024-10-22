@@ -108,3 +108,23 @@ button{
 .green{
   background-color: rgb(0, 149, 30);
 }
+.navbar{
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  text-align: center;
+  list-style: none;
+  padding: 10px;
+  background-color: rgb(44, 44, 44);
+}
+.navbar h1{
+  color:white;
+}
+
+.navbar li {
+  float: right;
+  color: white;
+  background-color: rgb(79, 128, 0);
+  padding: 3px 6px;
+  border-radius: 4px;
+}

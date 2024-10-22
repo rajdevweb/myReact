@@ -2,7 +2,7 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import { useState } from 'react';
-import './App.css'      
+import './App.css'
 // import './index.css'
 
 // function App() {
@@ -33,29 +33,35 @@ import './App.css'
 //     </>
 //   )
 // }
-{useState}
-const App = () =>{
-  const [num, setnum] = useState(0);
+{ useState }
+const App = () => {
+  // const [num, setnum] = useState(0);
 
-  return(
+  return (
     <>
-     <h1 className='text-xl'>Your number is : {num} </h1>
+      {/* <h1 className='text-xl'>Your number is : {num} </h1>
 
-     <div id='mainBtn'>
-     <button onClick={()=> setnum(num + 10)}>Increment</button>
-     <button onClick={()=> setnum(num - 10)}>Decrement</button>
-     <button onClick={()=> setnum(num - 10)}>Decrement</button>
+      <div id='mainBtn'>
+        <button onClick={() => setnum(num + 10)}>Increment</button>
+        <button onClick={() => setnum(num - 10)}>Decrement</button>
+        <button onClick={() => setnum(num - 10)}>Decrement</button>
 
-      <div className='flag'>
-      <div className='orange'>orange</div>
-      <div className='white'>white</div>
-      <div className='green'>green</div>
-     </div>
-     </div>
+        <div className='flag'>
+          <div className='orange'>orange</div>
+          <div className='white'>white</div>
+          <div className='green'>green</div>
+        </div>
+      </div>
 
-    
+      <div>krishna</div> */}
 
- 
+
+      {/* components */}
+      
+
+
+
+
     </>
   )
 }

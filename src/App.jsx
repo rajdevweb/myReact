@@ -1,15 +1,37 @@
-import {useState} from 'react'
-{useState}
+import {useEffect, useState} from 'react'
+
 // import Card from './components/Card'
 import axios from 'axios'
 
 const App = () => {
- 
- const getData =()=>{
-  const jsonData = axios.get('https://dummyjson.com/user/login')
-  console.log(jsonData);
-  
- }
+//  const [data, setData] = useState([])
+//  const getData = async()=>{
+//   const jsonData =await axios.get('https://picsum.photos/id/0/info')
+   
+//    setData(setData.jsonData)
+//    console.log(setData);
+   
+     
+//  }
+    const [data, setData] = useState([]);
+  const getData = async () => {
+    try {
+      const response = await axios.get('https://picsum.photos/id/0/info');
+      setData(response.data.id); // Set the data to state
+      console.log(response.data.id);
+      
+      
+     
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
+  };
+
+  // Call the getData function when the component loads
+  useEffect(() => {
+    getData();
+  }, []); 
+
   return (
     <>
   
@@ -18,10 +40,18 @@ const App = () => {
   Button
 </button>
     </div>
- 
+    <div>
+    {data.map((item) => (
+         
+         <div key={item.id}></div>
+        ))}
+  
+    </div>
+   
     </>
   
     
+
   )
 }
 

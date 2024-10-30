@@ -1,16 +1,24 @@
-import React from 'react'
+import React, { createContext } from 'react'
+export const DataContext = createContext()
 
-
-const contextAPI = ({children}) => {
+const Usercontext = ({children}) => {
   // console.log(props);
   
+  // const name = "raj vishwakaram"
+  //this is object 
+  const ObjectMe = {
+    name:"raj vishwakarma",
+    age:21,
+    job:"front-developer"
+  }
   return (
     <>
-    {/* <h1>Hello krishnaaaa</h1> */}
-    <div> {children} </div>
- 
+      <DataContext.Provider value={ObjectMe}>
+        {children}
+      </DataContext.Provider>
     </>
+  
   )
 }
 
-export default contextAPI
+export default Usercontext

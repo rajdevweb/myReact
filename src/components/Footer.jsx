@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
+import { DataContext } from "../context/Usercontext";
 
 const Footer = () => {
+  let footer = useContext(DataContext)
   return (
     <>
-      <h1>hi i am Footer</h1>
+      {/* <h1>Hello i am Footer {footer}</h1> */}
     </>
   );
 };

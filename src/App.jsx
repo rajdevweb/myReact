@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+// import React, { useContext } from 'react'
 // import About from './pages/About'
 // import Contact from './pages/Contact'
 // import Home from './pages/Home'
@@ -9,7 +9,9 @@ import React, { useContext } from 'react'
 // import Card from './components/Card.jsx'
 import Footer from './components/Footer.jsx'
 import Header from './components/Header.jsx'
-import Usercontext, { DataContext } from './context/Usercontext.jsx'
+import index from 'in'
+// import Usercontext, { DataContext } from './context/Usercontext.jsx'
+// import hooksEX  from './components/hooksEx.jsx'
 
 
 
@@ -23,9 +25,10 @@ const App = () => {
   
   return (
    <>
-   <h1>{dataMe.name}</h1>
-   <h1>{dataMe.name}</h1>
-    <Usercontext/>
+      <hooksEX/>
+{/* `   <h1>{dataMe.name}</h1>
+   <h1>{dataMe.name}</h1>` */}
+    {/* <Usercontext/> */}
     {/* <Card/> */}
     <Footer/>
     <Header/>

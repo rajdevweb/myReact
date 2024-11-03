@@ -14,6 +14,7 @@ const Counter = () => {
     
    <button onClick={()=>setcount(count * 2)}>Click me</button>
    <button onClick={()=>setcount(count * 2)}>Click me</button>
+   <button onClick={()=>setcount(count * 2)}>Click me</button>
    </>
   )
 }

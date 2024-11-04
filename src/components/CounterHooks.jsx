@@ -1,22 +1,19 @@
-// import React from 'react'
-import React, { useState } from 'react';
+
+import React, {useState} from 'react'
 
 
-const Counter = () => {
-    const [count, setcount] = useState(4)
-    console.log(count);
-    
-
+const CounterHooks = () => {
+   const [clicker, setclicker] = useState(0)
+    console.log(clicker);
   return (
-   <>
-   <p>NUMBER:{count}</p>
-  
+    <>
+    <div>
+      <p>you do click {clicker}</p>
+      <button onClick={() => setclicker(clicker + 1)}>Click</button>
+    </div>
     
-   <button onClick={()=>setcount(count * 2)}>Click me</button>
-   <button onClick={()=>setcount(count * 2)}>Click me</button>
-   <button onClick={()=>setcount(count * 2)}>Click me</button>
-   </>
+    </>
   )
 }
 
-export default Counter
+export default CounterHooks
